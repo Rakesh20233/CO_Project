@@ -128,9 +128,9 @@ for i in l:
         elif c[0] == "st" or c[0] == "ld":
             d = OP[c[0]][0] + Reg[c[1]]
             e = len(l) - vari
-            if i not in l2:
-                print("Error : Use of Undefined Variables")
-                break
+            #if i not in l2:
+                #print("Error : Use of Undefined Variables")
+                #break
 
             for i in l2:
                 if i[0] == c[2]:
@@ -150,9 +150,9 @@ for i in l:
         elif c[0] in OP:
             d = OP[c[0]][0]
 
-        elif (c[0][-1] != ":") and (c[0] not in OP) :
-            print("Typo")
-            break
+        #elif (c[0][-1] != ":") and (c[0] not in OP) :
+            #print("Typo")
+            #break
 
     if len(c) >= 2:
         if c[1] in Reg:
